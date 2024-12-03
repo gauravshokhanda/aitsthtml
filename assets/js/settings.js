@@ -19,6 +19,13 @@ document.addEventListener("DOMContentLoaded", function () {
           logoElement.src = settings.logo;
         }
 
+        const footerLogoElement = document.querySelector(
+          ".footer-widget .logo a.navbar-brand img"
+        );
+        if (footerLogoElement && settings.logo) {
+          footerLogoElement.src = settings.logo;
+        }
+
         // Update the address
         const addressElement = document.querySelector(
           ".footer-contact-info .address"
