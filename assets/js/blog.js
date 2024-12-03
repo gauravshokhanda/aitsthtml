@@ -28,7 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     <h2><a href="#">${blog.title}</a></h2>
                   </div>
                   <p class="mt-0">${blog.content}</p>
-                  <a href="#" class="details-link">Read More <i class="las la-arrow-right"></i></a>
+                  <a href="blog1.html?id=${
+                    blog._id
+                  }" class="details-link">Read More <i class="las la-arrow-right"></i></a>
                 </div>
               `;
           })
@@ -38,4 +40,40 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
     .catch((error) => console.error("Error fetching blogs:", error));
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Get the blog ID from the URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const blogId = urlParams.get("id");
+
+  if (!blogId) {
+    console.error("No blog ID provided in URL");
+    return;
+  }
+
+  // Fetch blog details
+  fetch(`https://associatedincometax.iamdeveloper.in/api/blogs/${blogId}`, {
+    method: "GET",
+    redirect: "follow",
+  })
+    .then((response) => response.json())
+    .then((result) => {
+      if (result.success && result.data) {
+        const blog = result.data;
+
+        // Populate the blog details page
+        document.querySelector(".blog-feature-img img").src =
+          blog.image || "assets/img/trans-bg.jpg";
+        document.querySelector(".blog-content-wrap p").innerHTML = blog.content;
+        document.querySelector(".blog-quote-text p").textContent =
+          blog.quote || "";
+        document.querySelector(".blog-quote-text h6").textContent = `${
+          blog.author || "Unknown"
+        } / ${blog.position || "N/A"}`;
+      } else {
+        console.error("Failed to fetch blog details");
+      }
+    })
+    .catch((error) => console.error("Error fetching blog details:", error));
 });

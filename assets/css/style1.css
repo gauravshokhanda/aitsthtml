@@ -9367,7 +9367,7 @@ a.details-link:hover
 
   align-items: center;
 
-  justify-content: space-between;
+  justify-content: center;
 
   margin-top: 20px;
 
@@ -9499,7 +9499,8 @@ a.details-link:hover
 
   border-color: #8fd2d7 ;
 
-  color: #061815;
+  /* color: #061815; */
+  color: #FF9E4A
 
 }
 
@@ -9587,7 +9588,7 @@ a.details-link:hover
 
   font-weight: 600;
 
-  color: #061815;
+  color: #555555;
 
   margin: 0;
 
@@ -9669,7 +9670,7 @@ a.details-link:hover
 
 .blog-tag-wrap span {
 
-  background: #fff;
+  background: #8fd2d7;
 
   padding: 10px 16px;
 
@@ -12970,4 +12971,12 @@ section#client .faq-section .section-title a {
   .footer-contact-info {
     margin-top: 20px;
 }
+}
+
+/* *************Blog Css************* */
+.section-title.tax-title p{
+  color: #FF9E4A;
+}
+.col-md-10.blog-main-detail {
+  margin: auto;
 }
