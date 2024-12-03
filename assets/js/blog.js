@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const blogContainer = document.getElementById("blog-container");
         blogContainer.innerHTML = latestBlogs
           .map((blog) => {
+            const content =
+              blog.content.split(" ").slice(0, 50).join(" ") +
+              (blog.content.split(" ").length > 0 ? "..." : "");
             return `
                 <div class="about-content-wrap pr-60">
                   <div class="section-title mb-1">
@@ -27,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     <h2><a href="#">${blog.title}</a></h2>
                   </div>
-                  <p class="mt-0">${blog.content}</p>
+                  <p class="mt-0">${content}</p>
                   <a href="blog1.html?id=${
                     blog._id
                   }" class="details-link">Read More <i class="las la-arrow-right"></i></a>
