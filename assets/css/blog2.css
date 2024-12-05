@@ -100,4 +100,72 @@ body {
   line-height: 1.2;
 }
 
-   
+
+#pagination-container {
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.pagination-button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(87, 85, 85);
+  border: 1px solid rgb(172, 170, 170);
+  border-radius: 5px;
+  background-color: #ddd;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.pagination-button:hover {
+  background-color: #8FD2D7;
+  color: white;
+}
+
+.pagination-button.active {
+  background-color: #8FD2D7;
+  color: white;
+  border: 1px solid #8FD2D7;
+  cursor: default;
+}
+
+.pagination-button.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.dots {
+  margin: 0 5px;
+  color: #555;
+  font-weight: bold;
+}
+
+.pagination-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.blog2-left-section img.blog2-team-image {
+      width: 100%;
+      height: auto !important;
+  }
+  .blog2-right-section h1.blog2-title {
+    line-height: 1.3em;
+    margin-top: 0;
+}
+.blog2-right-section {
+  margin-bottom: 30px;
+}
+div#blog-container-2 .col-md-12:nth-child(odd) .blog2-right-section .row {
+  display: flex;
+  flex-direction: row-reverse;
+}
