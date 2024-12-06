@@ -9370,6 +9370,7 @@ a.details-link:hover
   justify-content: center;
 
   margin-top: 20px;
+  gap: 20px;
 
 }
 
@@ -10796,13 +10797,13 @@ a.details-link:hover
 
     }
 
-    .content {
+    /* .content {
 
    
 
     padding: 0px 30px;
 
-}
+} */
 
 }
 
@@ -10920,17 +10921,11 @@ p.company-desc {
 
 }
 
-FTP Username: mailto:developers@iamdeveloper.in
-FTP server: ftp.iamdeveloper.in
-FTP & explicit FTPS port:  21
-FTP Password: KY8WHkVU=MxT
+
 
 .footer-widget ul li {
-
   display: block;
-
   margin-bottom: 20px;
-
 }
 
 .footer-area {
@@ -12979,4 +12974,188 @@ section#client .faq-section .section-title a {
 }
 .col-md-10.blog-main-detail {
   margin: auto;
+}
+.about-content-wrap.pr-60 p {
+  text-align: start;
+  /* padding: 0px 0px 0px 39px; */
+}   
+h6.new-latest {
+  /* color: #8fd2d7; */
+  color: #FF9E4A;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+  /* border: 1px solid #8fd2d7; */
+  border: 1px solid #FF9E4A;
+  border-radius: 25px;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-bottom: 20px;
+}
+.about-content-wrap.pr-60 {
+  margin-top: 30px;
+}
+.section-title h2{
+  text-align: start;
+}
+.section-title.mb-1 h2 a{
+  text-transform: capitalize;
+}
+.about-section.white-bg.section-padding.pt-0 hr {
+  margin-top: 70px !important;
+}
+.about-section.white-bg.section-padding.pt-0 {
+  padding-bottom: 30px;
+}
+a.list-blog{
+  color: #FF9E4A;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+  /* border: 1px solid #8fd2d7; */
+  border: 1px solid #FF9E4A;
+  border-radius: 25px;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-bottom: 20px;
+}
+a.blog-list{
+  margin-top: 20px;
+}
+@media(max-width:991px){
+  .about-bg-one.blog-image-1 {
+    height: 500px;
+    background-size: cover;
+    margin-top: 30px;
+}
+.about-bg-two{
+  height: 500px;
+    background-size: cover;
+}
+.process-tag-title {
+  display: none;
+}
+.about-tag-title{
+  display:none;
+}
+hr {
+  display: none;
+}
+}
+@media(max-width:767px){
+  .services-list ul li {
+    padding-bottom: 10px;
+}
+.accordion.faqs .card .card-body .content{
+  text-align: start;
+}
+h6.new-latest {
+  margin-top: 20px;
+}
+.about-content-wrap.pl-60{
+  margin-top: 20px;
+}
+.blog-meta-wrap{
+  display: block;
+}
+.blog-feature-img img {
+  width: 100%;
+}
+.footer-area {
+  padding-top: 20px;
+}
+.blog2-right-section{
+  padding-left: 0px !important;
+}
+div#blog-container-2{
+  padding-inline: 0px;
+}
+.blog2-about-container {
+  margin-top: 20px;
+}
+.process-section.section-padding.pt-0 {
+  margin-top: 80px;
+}
+.row.mt-5 {
+  margin-top: 10px !important;
+}
+.process-section.section-padding.mb-60.pb-0.schedule-section.pt-0 {
+  margin-top: 0px;
+}
+.faq-section.faq-two.section-padding.pt-0 {
+  padding-bottom: 0px;
+}
+.process-section.section-padding.mb-60.pb-0.schedule-section.pt-0 {
+  margin-bottom: 0px;
+}
+.contact-form-inner{
+  padding: 0px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title a {
+      margin-bottom: 120px !important;
+  }
+  
+/* .faq-section .contact-form-wrap .contact-form-inner input.input-btn {
+  margin-left:60px !important;
+} */
+.col-xl-6.col-lg-6.col-12.wow.fadeInRight.animated.about-bg-two{
+  height:600px;
+}
+.row.down-about {
+  padding-top: 20px !important;
+}
+.about-content-wrap {
+  margin-top: 20px !important;
+}
+.services-list.client-portal{
+  margin-top: 75px;
+}
+.services-list ul li {
+  padding-bottom: 10px;
+}
+.footer-widget .logo a {
+  margin-bottom: 20px;
+}
+.footer-area {
+  padding-top: 30px;
+}
+.contact-form-wrap.contact-second-form {
+  margin-top: 10px;
+}
+.section-padding{
+  padding: 0px 30px;
+}
+.process-section.section-padding.pt-0 {
+  margin-top: 80px;
+}
+.row.mt-5 {
+  margin-top: 0px !important;
+}
+.about-content-wrap.pl-60 {
+  padding-left: 0px;
+}
+.about-content-wrap.pr-60{
+  padding-right: 0px;
+}
+.section-title.mb-1{
+  margin-bottom: 0px;
+}
+h6.new-latest{
+  margin-top: 20px;
+}
+.process-section.section-padding.mb-60.pb-0.schedule-section.pt-0{
+  margin-top: 0px !important;
+}
+input.input-btn{
+  margin-left: 0px !important;
+}
+.about-section.white-bg.section-padding.pt-0 .section-title.mb-1 h2 a {
+  margin-bottom: 0px !important;
+}
 }

@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     .addEventListener("submit", function (event) {
       event.preventDefault(); // Prevent form submission
 
+      const form = document.getElementById("contactForm");
+
       // Get the values from the form inputs
       const name = document.getElementById("name").value;
       const email = document.getElementById("email").value;
@@ -48,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then((result) => {
           console.log(result); // Log the server response for debugging
           alert("Form submitted successfully!");
+          form.reset()
         })
         .catch((error) => {
           console.error(error);
