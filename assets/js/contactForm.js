@@ -14,6 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
       const message = document.getElementById("message").value;
       const newsletter = document.getElementById("newsletter").checked;
 
+      if (!validatePhone(phone)) {
+        alert("Please enter a valid phone number.");
+        return;
+      }
+
       // Prepare the data to send
       const raw = JSON.stringify({
         email: email,
@@ -48,13 +53,17 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         })
         .then((result) => {
-          console.log(result); // Log the server response for debugging
+          console.log(result); 
           alert("Form submitted successfully!");
           form.reset()
         })
         .catch((error) => {
           console.error(error);
-          alert("There was an error submitting the form. Please try again.");
+          alert("Please fill the required fields to submit the form.");
         });
     });
+  function validatePhone(phone) {
+    const phoneRegex = /^[0-9()\- ]+$/;
+    return phoneRegex.test(phone);
+  }
 });

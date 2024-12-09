@@ -20,6 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
       '.up-contact input[placeholder="Phone Number"]'
     ).value;
 
+    if (!validatePhone(phoneNumber)) {
+      alert("Please enter a valid phone number.");
+      return;
+    }
+
     // Prepare the data to send in the request
     const raw = JSON.stringify({
       firstName: firstName,
@@ -59,8 +64,12 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch((error) => {
         console.error(error);
         alert(
-          "An error occurred while submitting your request. Please try again."
+          "Please fill the required fields to submit the form."
         );
       });
   });
+  function validatePhone(phone) {
+    const phoneRegex = /^[0-9()\- ]+$/;
+    return phoneRegex.test(phone);
+  }
 });
