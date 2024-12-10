@@ -19,14 +19,16 @@ document.addEventListener("DOMContentLoaded", () => {
         const content =
           blog.content.split(" ").slice(0, 50).join(" ") +
           (blog.content.split(" ").length > 50 ? "..." : "");
+        const imageHTML = blog.image
+          ? `<img src="${blog.image}" alt="Team Discussion" class="blog2-team-image">`
+          : '';
         return `
           <div class="col-md-12">
           <div class="blog2-right-section">
           <div class="row align-items-center">
           <div class="col-md-6">
           <div class="blog2-left-section">
-            <img src=${blog.image} alt="Team Discussion"
-                class="blog2-team-image">
+            ${imageHTML}
           </div>
           </div>
           <div class="col-md-6">
