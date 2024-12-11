@@ -8654,6 +8654,7 @@ a.list-blog.blog-list:hover{
  background: #ff9e4a;
 
   text-align: center;
+  border-radius: 30px;
 
 }
 
@@ -13301,7 +13302,7 @@ section#resource .process-section.section-padding.pt-0 .container {
   background: #8fd2d7;
 }
 section#contact{
-  background:#ff9e4a ;
+  /* background:#ff9e4a ; */
 }
 .accordion.faqs .card {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
@@ -13385,10 +13386,25 @@ section#resource .section-title p{
   font-size: 30px;
   font-style: inherit !important;
 }
-.contact-form-wrap.contact-second-form .contact-form-header{
-  /* border-radius: 30px; */
-}
+
 .contact-form-wrap.contact-second-form .contact-form-header p{
   font-size: 30px !important;
   color: #061815 !important;
+}
+.contact-form-inner {
+  padding: 35px;
+  /* margin-top: 30px; */
+  /* max-width: 70%; */
+  margin: auto;
+}
+.contact-form-wrap.contact-second-form .contact-form-header{
+  border-radius: 30px;
+}
+.contact-form-wrap.contact-second-form {
+  width: 70%;
+  margin: auto;
+  border-radius: 30px;
+}
+.contact-form-wrap {
+  border-radius: 30px;
 }
