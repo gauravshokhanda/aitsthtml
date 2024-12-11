@@ -72,7 +72,7 @@
 
     <link href="assets/css/responsive.css" rel="stylesheet">
 
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- jquery -->
 
@@ -230,14 +230,14 @@
 
                         </div>
 
-                        <div class="header-contact">
+                        <!-- <div class="header-contact">
 
                             <div class="header-contact-info">
                                 <p><a href="https://aitstax.securefilepro.com/portal/#/login" class="main-btn">Log In</a></h6>
 
                             </div>
 
-                        </div>
+                        </div> -->
 
 
 
@@ -283,7 +283,8 @@
 
                 <div class="col-xl-6">
 
-                    <div class="hero-area">
+                    <div class="hero-area"  data-aos="fade-up"
+                    data-aos-duration="2000">
 
                         <div class="overlay"></div>
 
@@ -307,7 +308,8 @@
 
                 <div class="col-xl-6">
 
-                    <div class="banner-slider">
+                    <div class="banner-slider" data-aos="fade-down"
+                    data-aos-duration="2000">
 
                         <div class="slider slider-for">
 
@@ -331,7 +333,8 @@
 
     <!-- faq -->
 
-    <div class="faq-section section-padding dark-white" id="">
+    <div class="faq-section section-padding dark-white" id=""  data-aos="fade-up"
+    data-aos-duration="2000">
 
         <div class="container">
 
@@ -494,7 +497,9 @@
 
             <div class="container">
 
-                <div class="row">
+                <div class="row"  data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"data-aos-duration="2500">
 
                     <div class="col-xl-6 col-lg-6 col-12 wow fadeInLeft  animated" data-wow-delay="100ms"
                         style="visibility: visible; animation-delay: 100ms; animation-name: fadeInLeft;">
@@ -513,13 +518,16 @@
                     </div>
 
                     <div class="col-xl-6 col-lg-6 col-12 wow fadeInUp  animated" data-wow-delay="200ms"
-                        style="visibility: visible; animation-delay: 200ms; animation-name: fadeInUp;">
+                    data-aos="fade-right"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500" style="visibility: visible; animation-delay: 200ms; animation-name: fadeInUp;">
 
                         <div class="about-content-wrap pl-60">
 
                             <div class="section-title">
 
-                                <h6>About Company</h6>
+                                <h6><a href="about.html">About Company</a></h6>
 
                                 <h2>Associates Income Tax Services (AITS)</h2>
 
@@ -554,10 +562,15 @@
 
                 </div>
 
-                <div class="row down-about">
+                <div class="row down-about" data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"data-aos-duration="2500">
 
                     <div class="col-xl-6 col-lg-6 col-12 text-end wow fadeInUp  animated" data-wow-delay="100ms"
-                        style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
+                    data-aos="fade-right"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="500" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
 
                         <div class="about-content-wrap pr-60">
 
@@ -584,7 +597,9 @@
                     </div>
 
                     <div class="col-xl-6 col-lg-6 col-12 wow fadeInRight  animated" data-wow-delay="200ms"
-                        style="visibility: visible; animation-delay: 200ms; animation-name: fadeInRight;">
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"data-aos-duration="2000" style="visibility: visible; animation-delay: 200ms; animation-name: fadeInRight;">
 
                         <div class="about-bg-two"
                             style="background-image: url(assets/img/new-img/business-person-looking-finance-graphs\ \(1\).jpg);">
@@ -617,7 +632,8 @@
 
     <!-- blog -->
 
-    <section id="blog">
+    <section id="blog"  data-aos="fade-up"
+    data-aos-anchor-placement="center-center">
 
         <div class="about-section white-bg section-padding pt-0">
 
@@ -668,7 +684,9 @@
 
     <!-- resource -->
 
-    <section id="resource">
+    <section id="resource"data-aos="fade-left"
+    data-aos-easing="linear"
+    data-aos-duration="2000">
 
         <div class="process-section section-padding pt-0">
 
@@ -676,7 +694,9 @@
 
                 <div class="row">
 
-                    <div class="col-xl-8 col-lg-8 text-center mx-auto">
+                    <div class="col-xl-8 col-lg-8 text-center mx-auto"data-aos="fade-down"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"data-aos-duration="2000">
 
                         <div class="section-title">
 
@@ -1024,7 +1044,9 @@
 
     <!-- schedule -->
 
-    <section id="schedule">
+    <section id="schedule"data-aos="fade-up"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine"data-aos-duration="2500">
 
         <div class="process-section section-padding mb-60 pb-0 schedule-section pt-0">
 
@@ -1465,6 +1487,8 @@
 
     <script src="assets/js/circle-progress.min.js"></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- Main JS -->
 
     <script src="assets/js/main.js"></script>
@@ -1526,7 +1550,9 @@
         });
 
     </script>
-
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>
