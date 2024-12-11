@@ -4,6 +4,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /*--
 
     - Common CSS 
@@ -1192,12 +1194,39 @@ hr {
 
 }
 
+.row.down-about .section-title h6 {
+
+  color: #8fd2d7 ;
+  /* color: #FF9E4A; */
+
+  font-family: "Jost", sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  line-height: 20px;
+
+  text-transform: uppercase;
+
+  border: 1px solid #8fd2d7 ;
+  /* border: 1px solid #FF9E4A; */
+
+  border-radius: 25px;
+
+  display: inline-block;
+
+  padding: 8px 20px;
+
+  margin-bottom: 20px;
+
+}
 
 
 .section-title h6 {
 
-    color: #8fd2d7 ;
-    /* color: #FF9E4A; */
+    /* color: #8fd2d7 ; */
+    color: #FF9E4A;
 
     font-family: "Jost", sans-serif;
 
@@ -1209,8 +1238,8 @@ hr {
 
     text-transform: uppercase;
 
-    border: 1px solid #8fd2d7 ;
-    /* border: 1px solid #FF9E4A; */
+    /* border: 1px solid #8fd2d7 ; */
+    border: 1px solid #FF9E4A;
 
     border-radius: 25px;
 
@@ -3015,7 +3044,8 @@ body .magic-hover:hover {
 
    margin-left: 15px;
 
-    color: #ffff;
+    /* color: #ffff; */
+    color: #ff9e4a;
 
     text-decoration: underline;
 
@@ -4237,7 +4267,8 @@ div#sticky-wrapper {
 {
 
   /* color: #000; */
-  color: #FF9E4A; 
+  /* color: #FF9E4A;  */
+  color: #fff;
 
 }
 
@@ -13290,4 +13321,14 @@ section#home{
 }
 .row.down-about .about-content-wrap.pr-60 p {
   color: #fff;
+}
+.faq-section.section-padding.dark-white .col-xl-6.col-lg-6.col-12.wow.fadeInUp.animated .section-title h2 {
+  color: #222;
+  text-align: center;
+  font-family: "Oswald", sans-serif !important;
+  font-weight: 500 !important;
+}
+.header-top-area.header-top-two.dark-bg h4.text-white{
+  font-size: 26px;
+  font-style: italic;
 }
