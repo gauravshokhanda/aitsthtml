@@ -70,8 +70,9 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".tax-title h2").innerHTML = blog.title;
         document.querySelector(".blog-quote-text p").textContent =
           blog.quote || "";
-        document.querySelector(".blog-quote-text h6").textContent = `${blog.author || "Unknown"
-          } / ${blog.position || "N/A"}`;
+          
+        document.querySelector(".blog-quote-text h6").textContent = `${blog.author || "Associated Income Tax Services"
+          }`;
       } else {
         console.error("Failed to fetch blog details");
       }
