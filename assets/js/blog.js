@@ -62,16 +62,16 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((result) => {
       if (result.success && result.data) {
         const blog = result.data;
-
         // Populate the blog details page
-        document.querySelector(".blog-feature-img img").src =
-          blog.image || "assets/img/trans-bg.jpg";
+        if (blog.image) {
+          document.querySelector(".blog-feature-img img").src = blog.image;
+        }
         document.querySelector(".blog-content-wrap p").innerHTML = blog.content;
+        document.querySelector(".tax-title h2").innerHTML = blog.title;
         document.querySelector(".blog-quote-text p").textContent =
           blog.quote || "";
-        document.querySelector(".blog-quote-text h6").textContent = `${
-          blog.author || "Unknown"
-        } / ${blog.position || "N/A"}`;
+        document.querySelector(".blog-quote-text h6").textContent = `${blog.author || "Unknown"
+          } / ${blog.position || "N/A"}`;
       } else {
         console.error("Failed to fetch blog details");
       }
