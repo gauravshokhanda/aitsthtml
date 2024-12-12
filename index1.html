@@ -936,7 +936,34 @@
             autoplaySpeed: 1500,
 
         });
-    </script>
+    </script><script>
+jQuery(function($)
+
+ {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    var target = $(this.hash);
+    $('html, body').stop().animate({
+      scrollTop: target.offset().top - 140 // adjust the offset value as needed
+    }, 500); // adjust the animation speed as needed
+    return false;
+  });
+});
+</script>
+
+
+<script>
+jQuery(function($)
+ {
+  $('a[href="#map"]').click(function() {
+    var target = $('#colophon'); // Target the section with ID "colophon"
+    $('html, body').stop().animate({
+      scrollTop: target.offset().top - 140 // Adjust the offset value as needed
+    }, 500); // Adjust the animation speed as needed
+    return false;
+  });
+});
+</script>
+
     <script>
         AOS.init();
     </script>
