@@ -13470,3 +13470,12 @@ section#resource .section-title p{
 .feature-content {
   margin-left: 74px;
 }
+
+.blog-quote-wrap h6.blog-author{
+    margin-top: 0px;
+}
+
+
+.blog-quote-wrap .blog-quote-text{
+    padding-left: 0px !important;
+}
