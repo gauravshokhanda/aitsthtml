@@ -46,15 +46,15 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   // Get the blog ID from the URL
   const urlParams = new URLSearchParams(window.location.search);
-  const blogId = urlParams.get("id");
+  const blogSlug = urlParams.get("slug");
 
-  if (!blogId) {
-    console.error("No blog ID provided in URL");
+  if (!blogSlug) {
+    console.error("No blog Slug provided in URL");
     return;
   }
 
   // Fetch blog details
-  fetch(`https://associatedincometax.iamdeveloper.in/api/blogs/${blogId}`, {
+  fetch(`https://associatedincometax.iamdeveloper.in/api/blogs/slug/${blogSlug}`, {
     method: "GET",
     redirect: "follow",
   })
