@@ -20,6 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
       '.up-contact input[placeholder="Phone Number"]'
     ).value;
 
+    if (!firstName || !lastName || !email || !phoneNumber) {
+      alert("All fields are required. Please fill in all the fields.");
+      return;
+    }
+
     if (!validatePhone(phoneNumber)) {
       alert("Please enter a valid phone number.");
       return;
@@ -62,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
         form.reset()
       })
       .catch((error) => {
-        console.error(error);
+
         alert(
           "Please fill the required fields to submit the form."
         );

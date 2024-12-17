@@ -14,6 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
       const message = document.getElementById("message").value;
       const newsletter = document.getElementById("newsletter").checked;
 
+      if (!name || !email || !phone || !source || !message || !newsletter) {
+        alert("All fields are required. Please fill in all the fields.");
+        return;
+      }
+
       if (!validatePhone(phone)) {
         alert("Please enter a valid phone number.");
         return;
@@ -53,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         })
         .then((result) => {
-          console.log(result); 
+          console.log(result);
           alert("Form submitted successfully!");
           form.reset()
         })
