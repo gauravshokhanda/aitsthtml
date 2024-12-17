@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <h2><a href="#">${blog.title}</a></h2>
                   </div>
                   <p class="mt-0">${content}</p>
-                  <a href="#" class="details-link">Read More <i class="las la-arrow-right"></i></a>
+                  <a href="blog1.html?slug=${blog.slug}" class="details-link">Read More <i class="las la-arrow-right"></i></a>
                 </div>
               `;
           })

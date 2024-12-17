@@ -1066,8 +1066,6 @@ iframe {
   /* background: #ff9e4a; */
 }
 
-
-
 .white-bg {
   background: #fff;
 }
@@ -9603,7 +9601,6 @@ section#home {
 }
 
 .about-right-img img {
-
   border-radius: 20px;
 }
 .about-left-img.wow.fadeInUp img {
@@ -9855,4 +9852,30 @@ section#resource .section-title p {
   footer-bottom.yellow-bg {
     padding: 0px 5px;
   }
+  .process-bg {
+    min-height: 400px;
+    background-size: cover;
+  }
+  .about-right-wrap p {
+    padding-top: 0px;
+  }
+}
+
+@media(max-width:991px){
+  .faq-section.faq-two.section-padding.pt-0 .section-title.text-center a.main-btn.mt-3 {
+    margin-bottom: 0px !important;
+}
+}
+.blog-feature-img {
+  display: none;
+}
+.breadcrumb-area.services.section-padding.light-bg-1 {
+  padding: 30px 0px;
+}
+.col-xl-6.col-lg-6.col-12.text-end.wow.fadeInUp.aos-init.aos-animate h6 {
+  margin-right: 40px;
+}
+.blog-quote-wrap h6.blog-author:before{
+  width:40px;
+  left: 20px;
 }
