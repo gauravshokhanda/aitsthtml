@@ -34,7 +34,7 @@ body {
 
   z-index: 1;
 
-  background: #faf3eb;
+  background: #fff;
 
   overflow-x: hidden;
 }
@@ -1066,9 +1066,7 @@ iframe {
   /* background: #ff9e4a; */
 }
 
-.light-bg-2 {
-  background: #faf3eb;
-}
+
 
 .white-bg {
   background: #fff;
@@ -9481,19 +9479,19 @@ a.blog-list {
   }
 }
 
-.about-bg-one {
+/* .about-bg-one {
   border-left: 20px solid #013569;
   border-bottom: 20px solid #013569;
-}
+} */
 .about-bg-one:hover {
   /* box-shadow: 0 4px 20px 5px rgba(1, 53, 105, 0.7), 0 4px 20px 5px rgba(255, 255, 255, 0.3); */
   box-shadow: 0 4px 20px 5px rgba(255, 158, 74, 0.8),
     0 4px 20px 5px rgba(143, 210, 215, 0.8);
 }
-.about-bg-two {
+/* .about-bg-two {
   border-right: 20px solid #013569;
   border-bottom: 20px solid #013569;
-}
+} */
 .about-bg-two:hover {
   /* box-shadow: 0 4px 20px 5px rgba(1, 53, 105, 0.7), 0 4px 20px 5px rgba(255, 255, 255, 0.3); */
   box-shadow: 0 4px 20px 5px rgba(255, 158, 74, 0.8),
@@ -9502,10 +9500,10 @@ a.blog-list {
 .accordion.faqs .card {
   border: 2px solid #013569 !important;
 }
-.process-bg {
+/* .process-bg {
   border-left: 20px solid #013569;
   border-bottom: 20px solid #013569;
-}
+} */
 .process-bg:hover {
   /* box-shadow: 0 4px 20px 5px rgba(1, 53, 105, 0.7), 0 4px 20px 5px rgba(255, 255, 255, 0.3); */
   box-shadow: 0 4px 20px 5px rgba(255, 158, 74, 0.8),
@@ -9605,14 +9603,11 @@ section#home {
 }
 
 .about-right-img img {
-  border-right: 20px solid #013569;
-  border-bottom: 20px solid #013569;
-  border-bottom-right-radius: 20px;
+
+  border-radius: 20px;
 }
 .about-left-img.wow.fadeInUp img {
-  border-left: 20px solid #013569;
-  border-bottom: 20px solid #013569;
-  border-bottom-left-radius: 20px;
+  border-radius: 20px;
 }
 .team-thumb img {
   padding-bottom: 3px;
