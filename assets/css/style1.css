@@ -9719,6 +9719,10 @@ section#resource .section-title p {
   border: none;
   width: 100%;
 }
+.row.row-reverse{
+  display:flex;
+  flex-direction: row-reverse;
+}
 @media (max-width: 991px) {
   .navbar-toggler {
     border: none;

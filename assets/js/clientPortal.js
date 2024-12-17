@@ -4,8 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent the default form submission
 
-
-
     // Get the values from the form inputs
     const firstName = document.querySelector(
       '.up-contact input[placeholder="First Name"]'
@@ -55,24 +53,25 @@ document.addEventListener("DOMContentLoaded", function () {
       requestOptions
     )
       .then((response) => {
-        if (response.ok) {
-          return response.json();
-        } else {
-          throw new Error("Failed to submit data.");
-        }
+        // Parse the response JSON regardless of status
+        return response.json().then((data) => {
+          if (!response.ok) {
+            throw new Error(data.error || "Failed to submit data.");
+          }
+          return data; 
+        });
       })
       .then((result) => {
         console.log(result); // Log the server response
         alert("Request submitted successfully!");
-        form.reset()
+        form.reset(); 
       })
       .catch((error) => {
-
-        alert(
-          "Please fill the required fields to submit the form."
-        );
+        console.log("Error:", error.message);
+        alert(error.message);
       });
   });
+
   function validatePhone(phone) {
     const phoneRegex = /^[0-9()\- ]+$/;
     return phoneRegex.test(phone);
