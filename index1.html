@@ -151,14 +151,15 @@
                     <div class="banner-slider" data-aos="fade-down" data-aos-duration="2000">
                         <div class="slider slider-for">
                             <div>
-                                <img src="assets/img/banner-img/portrait-female-teacher-holding-yellow-files-pencil-green-min-removebg-preview.png">
+                                <img src="assets/img/banner-img/depositphotos_26440035-removebg-preview.png">
                             </div>
-                            
+
                             <div>
-                                <img src="assets/img/banner-img/workman-with-his-arms-crossed-white-background-min-removebg-preview.png">
+                                <img
+                                    src="assets/img/banner-img/workman-with-his-arms-crossed-white-background-min-removebg-preview.png">
                             </div>
                             <div>
-                                <img src="assets/img/banner-img/police_officer-removebg-preview.png">
+                                <img src="assets/img/banner-img/Police Girl_New_Project-removebg-preview.png">
                             </div>
                         </div>
                     </div>
@@ -266,8 +267,7 @@
     <section id="about">
         <div class="about-section white-bg section-padding pt-0">
             <div class="container">
-                <div class="row row-reverse" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-                    data-aos-duration="2200">
+                <div class="row row-reverse">
                     <div class="col-xl-6 col-lg-6 col-12 wow fadeInLeft  animated" data-wow-delay="100ms"
                         style="visibility: visible; animation-delay: 100ms; animation-name: fadeInLeft;">
                         <div class="about-bg-one"
@@ -314,11 +314,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="row down-about row-reverse" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
-                    data-aos-duration="2200">
+                <div class="row down-about row-reverse" data-aos="fade-left" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" data-aos-duration="2200">
                     <div class="col-xl-6 col-lg-6 col-12 text-end wow fadeInUp  animated" data-wow-delay="100ms"
-                        data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500"
-                        data-aos-duration="500"
+                        data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="400"
+                        data-aos-duration="400"
                         style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
                         <div class="about-content-wrap pr-60">
                             <div class="section-title">
@@ -358,7 +358,7 @@
     </section>
     <!-- About Section  -->
     <!-- blog -->
-    <section id="blog" >
+    <section id="blog">
         <div class="about-section white-bg section-padding pt-0">
             <div class="container">
                 <div class="row">
@@ -388,7 +388,7 @@
         <div class="process-section section-padding pt-0">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-8 col-lg-8 text-center mx-auto" >
+                    <div class="col-xl-8 col-lg-8 text-center mx-auto">
                         <div class="section-title">
                             <p>Resources</p>
                         </div>
@@ -531,7 +531,7 @@
     <!-- resources end -->
     <!-- client -->
     <section id="client">
-        <div class="faq-section faq-two  section-padding pt-0" >
+        <div class="faq-section faq-two  section-padding pt-0">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-12 mx-auto wow fadeInUp animated"
@@ -584,7 +584,7 @@
                     <div class="col-xl-6 col-lg-6 col-12 wow fadeInLeft  animated" data-wow-delay="200ms"
                         style="visibility: visible; animation-delay: 200ms; animation-name: fadeInLeft;">
                         <div class="process-bg"
-                            style="background-image: url(assets/img/banner-img/arrangement-finances-elements-with-empty-smartphone_23-2148793741.png);">
+                            style="background-image: url(assets/img/banner-img/business-woman.png);">
                             <!-- <div class="process-tag-title">
                                 <h4>Walk-ins are welcome, but availability is not guaranteed.</h4>
                             </div> -->
@@ -935,33 +935,31 @@
             autoplaySpeed: 1500,
 
         });
-    </script><script>
-jQuery(function($)
+    </script>
+    <script>
+        jQuery(function ($) {
+            $('a[href*="#"]:not([href="#"])').click(function () {
+                var target = $(this.hash);
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top - 140 // adjust the offset value as needed
+                }, 500); // adjust the animation speed as needed
+                return false;
+            });
+        });
+    </script>
 
- {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    var target = $(this.hash);
-    $('html, body').stop().animate({
-      scrollTop: target.offset().top - 140 // adjust the offset value as needed
-    }, 500); // adjust the animation speed as needed
-    return false;
-  });
-});
-</script>
 
-
-<script>
-jQuery(function($)
- {
-  $('a[href="#map"]').click(function() {
-    var target = $('#colophon'); // Target the section with ID "colophon"
-    $('html, body').stop().animate({
-      scrollTop: target.offset().top - 140 // Adjust the offset value as needed
-    }, 500); // Adjust the animation speed as needed
-    return false;
-  });
-});
-</script>
+    <script>
+        jQuery(function ($) {
+            $('a[href="#map"]').click(function () {
+                var target = $('#colophon'); // Target the section with ID "colophon"
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top - 140 // Adjust the offset value as needed
+                }, 500); // Adjust the animation speed as needed
+                return false;
+            });
+        });
+    </script>
 
     <script>
         AOS.init();
