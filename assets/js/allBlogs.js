@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <p class="blog2-description">
                 ${content}
               </p>
-              <a href="blog1.html?slug=${blog.slug}" class="details-link">Read More <i class="las la-arrow-right"></i></a>  
+              <a href="blog1.html?slug=${blog.slug}" class="details-link">Read More <i class="las la-arrow-right"></i></a>   
             </div>
           </div>
           </div>
@@ -51,7 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const renderPagination = () => {
     const totalPages = Math.ceil(blogs.length / blogsPerPage);
     let paginationHTML = `
-      <button class="pagination-button first-button" ${currentPage === 1 ? "disabled" : ""
+      <button class="pagination-button first-button" ${
+        currentPage === 1 ? "disabled" : ""
       } data-page="1">First</button>
     `;
 
@@ -64,8 +65,9 @@ document.addEventListener("DOMContentLoaded", () => {
         i === currentPage + 1 ||
         i <= 3
       ) {
-        paginationHTML += `<button class="pagination-button ${i === currentPage ? "active" : ""
-          }" data-page="${i}">${i}</button>`;
+        paginationHTML += `<button class="pagination-button ${
+          i === currentPage ? "active" : ""
+        }" data-page="${i}">${i}</button>`;
       } else if (i === 4 && currentPage > 4) {
         paginationHTML += `<span class="dots">...</span>`;
       } else if (i === totalPages - 1 && currentPage < totalPages - 3) {
@@ -74,7 +76,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     paginationHTML += `
-      <button class="pagination-button last-button" ${currentPage === totalPages ? "disabled" : ""
+      <button class="pagination-button last-button" ${
+        currentPage === totalPages ? "disabled" : ""
       } data-page="${totalPages}">Last</button>
     `;
 
