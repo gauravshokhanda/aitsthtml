@@ -9825,6 +9825,7 @@ section#resource .section-title p {
 .about-right-img:hover {
   box-shadow: 0 4px 20px 5px rgba(255, 158, 74, 0.8),
     0 4px 20px 5px rgba(143, 210, 215, 0.8);
+  border-radius: 20px;
 }
 .about-left-img.wow.fadeInUp img:hover {
   box-shadow: 0 4px 20px 5px rgba(255, 158, 74, 0.8),
