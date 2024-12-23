@@ -28,10 +28,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="blog-meta">
                       <span>${new Date(blog.createdAt).toDateString()}</span>
                     </div>
-                    <h2><a href="#">${blog.title}</a></h2>
+                    <h2><a href="">${blog.title}</a></h2>
                   </div>
                   <p class="mt-0">${content}</p>
-                  <a href="blog1.html?slug=${blog.slug}" class="details-link">Read More <i class="las la-arrow-right"></i></a>
+                  <a href="blog1.html?slug=${
+                    blog.slug
+                  }" class="details-link">Read More <i class="las la-arrow-right"></i></a>
                 </div>
               `;
           })
@@ -54,10 +56,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Fetch blog details
-  fetch(`https://associatedincometax.iamdeveloper.in/api/blogs/slug/${blogSlug}`, {
-    method: "GET",
-    redirect: "follow",
-  })
+  fetch(
+    `https://associatedincometax.iamdeveloper.in/api/blogs/slug/${blogSlug}`,
+    {
+      method: "GET",
+      redirect: "follow",
+    }
+  )
     .then((response) => response.json())
     .then((result) => {
       if (result.success && result.data) {
@@ -70,9 +75,10 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".tax-title h2").innerHTML = blog.title;
         document.querySelector(".blog-quote-text p").textContent =
           blog.quote || "";
-          
-        document.querySelector(".blog-quote-text h6").textContent = `${blog.author || "Associated Income Tax Services"
-          }`;
+
+        document.querySelector(".blog-quote-text h6").textContent = `${
+          blog.author || "Associated Income Tax Services"
+        }`;
       } else {
         console.error("Failed to fetch blog details");
       }
