@@ -28,7 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="blog-meta">
                       <span>${new Date(blog.createdAt).toDateString()}</span>
                     </div>
-                    <h2><a href="">${blog.title}</a></h2>
+                    <h2><a  href="blog1.html?slug=${blog.slug}" >${
+              blog.title
+            }</a></h2> 
                   </div>
                   <p class="mt-0">${content}</p>
                   <a href="blog1.html?slug=${

@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
           (blog.content.split(" ").length > 50 ? "..." : "");
         const imageHTML = blog.image
           ? `<img src="${blog.image}" alt="Team Discussion" class="blog2-team-image">`
-          : '';
+          : "";
         return `
           <div class="col-md-12">
           <div class="blog2-right-section">
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
           <div class="col-md-6">
             <div class="blog2-about-container">
-              <h1 class="blog2-title">${blog.title}</h1>
+              <h1 class="blog2-title">${blog.title} </h1>
               <p class="blog2-description">
                 ${content}
               </p>

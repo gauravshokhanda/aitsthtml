@@ -5190,8 +5190,7 @@ a.list-blog.blog-list:hover {
 }
 
 .single-testimonial-author {
-  background: rgb(5, 98, 81);
-
+  background: #013569;
   padding: 10px 0px 10px 10px;
 
   border-radius: 10px;
@@ -5316,7 +5315,7 @@ a.list-blog.blog-list:hover {
 .testimonial-slider-wrap {
   display: flex;
 
-  margin-top: 60px;
+  /* margin-top: 60px; */
 
   margin-left: 200px;
 
@@ -6308,7 +6307,7 @@ section#client .contact-form-wrap {
 .team-section .single-team-wrap .team-details p {
   font-size: 18px;
 
-  margin: 25px 0;
+  /* margin: 25px 0; */
 }
 
 @media (max-width: 767px) {
@@ -9549,7 +9548,7 @@ section#contact {
   /* background:#ff9e4a ; */
 }
 div#accordionFaq {
-  padding-top: 80px;
+  /* padding-top: 80px;    */
 }
 .accordion.faqs .card {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
@@ -9838,7 +9837,7 @@ section#resource .section-title p {
   padding: 50px 0px 30px 0px;
 }
 .about-right-wrap p {
-  padding-top: 50px;
+  padding-top: 60px;
 }
 .breadcrumb-area.services.section-padding.light-bg-1.pb-0 {
   padding: 30px 0px;
@@ -9899,4 +9898,148 @@ section#resource .section-title p {
 .blog-quote-wrap h6.blog-author:before {
   width: 40px;
   left: 20px;
+}
+.about-section.about-two.section-padding .about-right-wrap .about-right-img img {
+  width: 100%;
+}
+/* .single-team-wrap.main-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+} */
+.about-section.about-two.section-padding.about-main-sec .section-title {
+  margin-bottom: 0px;
+}
+/* The Modal (background) */
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Background overlay */
+  align-items: center;
+  justify-content: center;
+}
+
+ /* Popup Modal Styles */
+ .modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.modal-body {
+  font-family: "Syne", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  position: relative;
+  color: #555555;
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Container for Team Members */
+.team-section {
+  padding: 50px 0;
+}
+
+.team-thumb {
+  width: 100%;
+  cursor: pointer;
+}
+.pdf-column{
+  padding: 20px ;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  height: 100%;
+}
+.pdf-column a{
+  padding-top: 20px;
+  color: #013569;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: uppercase;
+    /* border: 1px solid #8fd2d7; */
+    border: 1px solid #013569;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 8px 20px;
+   margin-top: 20px;
+}
+.pdf-column a:hover{
+  color: #061816;
+}
+.pdf-column:hover{
+  box-shadow: 0 4px 20px 5px rgba(255, 158, 74, 0.8), 0 4px 20px 5px rgba(143, 210, 215, 0.8);
+}
+.pdf-column h3 {
+  font-size: 28px;
+}
+.main-ccolumns {
+  padding: 40px 0px 0px 40px;
+}
+h5.mb-0.subtitle.last-tab a {
+  font-size: 1.25em;
+ 
+  color: #061815;
+}
+.main-ccolumns .col-md-3 {
+  margin-bottom: 30px;
+}
+@media(max-width:767px){
+  .main-ccolumns {
+    padding: 0px;
+    margin: 40px 0px;
+}
+.pdf-column{
+  height: auto;
+}
+}
+
+
+
+.testimonial-section.section-padding .section-title h2{
+text-align: center;
 }
