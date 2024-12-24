@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
           <div class="col-md-6">
             <div class="blog2-about-container">
-              <h1 class="blog2-title">${blog.title} </h1>
+              <h1 class="blog2-title"> <a href="blog1.html?slug=${blog.slug}" >${blog.title} </a> </h1>
               <p class="blog2-description">
                 ${content}
               </p>
