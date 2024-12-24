@@ -67,8 +67,20 @@ body {
 
 .blog2-title {
   font-size: 28px;
-  color: #50CAC9;
+  color: #013569;
   margin: 15px 0;
+}
+.blog2-title a {
+  font-size: 28px;
+  color: #013569; /* Change the color of the link */
+  text-decoration: none; /* Optional: remove underline */
+}
+
+/* Optional: Add hover effect for the link */
+.blog2-title a:hover {
+  font-size: 28px;
+  color: #013569; /* Color on hover */
+  text-decoration: underline; /* Optional: add underline on hover */
 }
 
 .blog2-description {
