@@ -110,6 +110,14 @@ document.addEventListener("DOMContentLoaded", function () {
         newsletter: newsletter ? "true" : "false",
       });
 
+      const payload2 = JSON.stringify({
+        email: email,
+        name: name,
+        phone: phone,
+        source: source,
+        newsletter: newsletter ? "true" : "false",
+      });
+
       // Set up the request options
       const requestOptions = {
         method: "POST",
@@ -117,6 +125,13 @@ document.addEventListener("DOMContentLoaded", function () {
           "Content-Type": "application/json",
         },
         body: payload,
+      };
+      const requestOptions2 = {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: payload2,
       };
 
       try {
@@ -136,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Send to the second API
         const response2 = await fetch(
           "https://associatedincometax.iamdeveloper.in/api/zoho/add-lead",
-          requestOptions
+          requestOptions2
         );
 
         if (!response2.ok) {
