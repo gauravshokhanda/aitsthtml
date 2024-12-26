@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .then((result) => {
           console.log(result);
-          alert("Form submitted successfully!");
+          alert("Thank you for contact us. We will get back to you ASAP.");
           form.reset();
         })
         .catch((error) => {
