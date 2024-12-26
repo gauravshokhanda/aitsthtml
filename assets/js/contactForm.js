@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Send to the second API
         const response2 = await fetch(
-          "https://associatedincometax.iamdeveloper.in/api/add-lead",
+          "https://associatedincometax.iamdeveloper.in/api/zoho/add-lead",
           requestOptions
         );
 
