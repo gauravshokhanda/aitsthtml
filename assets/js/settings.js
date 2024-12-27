@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         );
         if (contactNumberElements.length > 0 && settings.contactNumber) {
           // Assuming the first number is the main contact
-          contactNumberElements[0].textContent = settings.contactNumber;
+          contactNumberElements[0].textContent = `Phone:${settings.contactNumber}`;
           contactNumberElements[0].href = `tel:${settings.contactNumber}`;
 
           // If there is a secondary number, update it or leave it unchanged
