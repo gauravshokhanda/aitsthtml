@@ -10068,6 +10068,9 @@ h5.mb-0.subtitle.last-tab a {
   .pdf-column {
     height: auto;
   }
+  .process-section.section-padding.pt-0 {
+    padding-bottom: 0px;
+}
 }
 
 .testimonial-section.section-padding .section-title h2 {
@@ -10149,4 +10152,12 @@ a.read-more {
   position: relative;
   z-index: 2; /* Ensure the content box is above the video and overlay */
   text-align: center;
+}
+@media(max-width:991px){
+  .contact-area.section-padding.pt-0 {
+    margin-bottom: 30px;
+}
+.faq-section.section-padding.dark-white.aos-init.aos-animate .col-xl-6.col-lg-6.col-12.wow.fadeInUp.animated .section-title h2 {
+  padding-top: 20px;
+}
 }
