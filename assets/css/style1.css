@@ -5879,32 +5879,31 @@ a.list-blog.blog-list:hover {
   height: auto;
 }
 
-.about-content-wrap.pl-60 .section-title h6 a:hover{
-    background: #003468;
-    color: #fff;
+.about-content-wrap.pl-60 .section-title h6 a:hover {
+  background: #003468;
+  color: #fff;
 }
-a.list-blog.blog-list:hover{
-    background: #003468;
-    color: #fff;
+a.list-blog.blog-list:hover {
+  background: #003468;
+  color: #fff;
 }
-.details-link:hover{
-    border: none;
+.details-link:hover {
+  border: none;
 }
-.pdf-column a{
-    text-decoration: none;
-    background: #003468;
-    color: #fff;
-    padding: 15px 20px;
-    border-radius: 25px;
-    font-size: 20px;
-    border: 2px solid #003468 !important;
-    transition: background 0.3s ease;
+.pdf-column a {
+  text-decoration: none;
+  background: #003468;
+  color: #fff !important;
+  padding: 15px 20px;
+  border-radius: 25px;
+  font-size: 20px;
+  border: 2px solid #003468 !important;
+  transition: background 0.3s ease;
 }
-.pdf-column a:hover{
-    background: #fff;
-    color: #003468;
+.pdf-column a:hover {
+  background: #fff;
+  color: #003468 !important;
 }
-
 
 @-webkit-keyframes shake {
   0% {
@@ -9926,7 +9925,10 @@ section#resource .section-title p {
   width: 40px;
   left: 20px;
 }
-.about-section.about-two.section-padding .about-right-wrap .about-right-img img {
+.about-section.about-two.section-padding
+  .about-right-wrap
+  .about-right-img
+  img {
   width: 100%;
 }
 /* .single-team-wrap.main-reverse {
@@ -9951,8 +9953,8 @@ section#resource .section-title p {
   justify-content: center;
 }
 
- /* Popup Modal Styles */
- .modal {
+/* Popup Modal Styles */
+.modal {
   display: none; /* Hidden by default */
   position: fixed;
   z-index: 1;
@@ -10013,34 +10015,36 @@ section#resource .section-title p {
   width: 100%;
   cursor: pointer;
 }
-.pdf-column{
-  padding: 20px ;
+.pdf-column {
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   height: 100%;
   background: #fff;
 }
-.pdf-column a{
+.pdf-column a {
   padding-top: 20px;
   color: #013569;
   font-size: 18px;
   font-family: "Jost", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    text-transform: uppercase;
-    /* border: 1px solid #8fd2d7; */
-    border: 1px solid #013569;
-    border-radius: 25px;
-    display: inline-block;
-    padding: 8px 20px;
-   margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+  /* border: 1px solid #8fd2d7; */
+  border: 1px solid #013569;
+  border-radius: 25px;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 20px;
 }
-.pdf-column a:hover{
+.pdf-column a:hover {
   color: #061816;
 }
-.pdf-column:hover{
-  box-shadow: 0 4px 20px 5px rgba(255, 158, 74, 0.8), 0 4px 20px 5px rgba(143, 210, 215, 0.8);
+.pdf-column:hover {
+  box-shadow: 0 4px 20px 5px rgba(255, 158, 74, 0.8),
+    0 4px 20px 5px rgba(143, 210, 215, 0.8);
 }
 .pdf-column h3 {
   font-size: 28px;
@@ -10050,26 +10054,24 @@ section#resource .section-title p {
 }
 h5.mb-0.subtitle.last-tab a {
   font-size: 1.25em;
- 
+
   color: #061815;
 }
 .main-ccolumns .col-md-3 {
   margin-bottom: 30px;
 }
-@media(max-width:767px){
+@media (max-width: 767px) {
   .main-ccolumns {
     padding: 0px;
     margin: 40px 0px;
-}
-.pdf-column{
-  height: auto;
-}
+  }
+  .pdf-column {
+    height: auto;
+  }
 }
 
-
-
-.testimonial-section.section-padding .section-title h2{
-text-align: center;
+.testimonial-section.section-padding .section-title h2 {
+  text-align: center;
 }
 
 /* ********************************************** */
@@ -10107,7 +10109,7 @@ text-align: center;
   text-decoration: none;
   cursor: pointer;
 }
-a.read-more{
+a.read-more {
   color: #013569;
   font-weight: 700;
 }
@@ -10117,7 +10119,7 @@ a.read-more{
   position: relative;
   /* height: 100vh; */
   width: 100%;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 #myVideo {
@@ -10126,13 +10128,13 @@ a.read-more{
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   z-index: -1; /* Ensure the video stays in the background */
 }
 
 /* Overlay to improve visibility */
 .video-background::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -10147,11 +10149,4 @@ a.read-more{
   position: relative;
   z-index: 2; /* Ensure the content box is above the video and overlay */
   text-align: center;
- 
-  
 }
-
-
-
-
-
