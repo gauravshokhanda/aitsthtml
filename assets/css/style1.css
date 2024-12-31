@@ -10161,3 +10161,7 @@ a.read-more {
   padding-top: 20px;
 }
 }
+
+div#mapModal {
+    z-index: 99999;
+}
